@@ -42,3 +42,18 @@ else:
 print("Study Hours:", study_hours)
 print("Stress Level:", stress_level)
 print("Social Points:", social_points)
+
+#3
+#initialize study_options
+study_options = ["Programming", "Math", "English", "History"]
+#get option
+option = input()
+#if statements for printing information on option
+if option in study_options:
+    print("Options:", option, "available.")
+elif option not in study_options:
+    print("Options:", option, "not available.")
+if option == "Programming" or option == "Math":
+    print("Stem")
+if option is not "Programming" and option is not "Math":
+    print("Boring Person")
