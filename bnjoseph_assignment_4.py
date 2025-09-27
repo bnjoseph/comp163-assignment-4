@@ -57,3 +57,41 @@ if option == "Programming" or option == "Math":
     print("Stem")
 if option is not "Programming" and option is not "Math":
     print("Boring Person")
+
+#4
+# display final options
+print("A) Study")
+print("B) Party")
+print("C) Sleep")
+#new gpa
+gpa = current_gpa + study_hours / 15
+if gpa > 4.0:
+    gpa = 4.0
+#get last choice
+last_choice = input()
+#nested statements
+if last_choice == "A":
+    study_hours += 10
+    if gpa >= 3.5:
+        print("Scholar")
+    elif social_points >= 12:
+        print("Party away your sorrows for academic failures")
+    else:
+        print("Unremarkable Academic")
+elif last_choice == "B":
+    social_points += 10
+    if gpa >= 3.5:
+        print("Sleepy intellectual")
+    elif social_points >= 12:
+        print("Center of the Party")
+    else:
+        print("Unremarkable Party Goer")
+elif last_choice == "C":
+    if gpa >= 3.5:
+        print("Sleepy intellectual")
+    elif social_points >= 12:
+        print("Sleep and Party")
+    else:
+        print("Unremarkable")
+else:
+    print("Input is invalid")
